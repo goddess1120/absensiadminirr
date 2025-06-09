@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Absensi Admin IRR</title>
@@ -16,27 +15,35 @@
     </div>
     <div class="city">INDORAYA ROLEPLAY</div>
   </header>
+
   <div class="main">
     <nav>
       <button onclick="showSection('onoff')">On / Off Duty</button>
       <button onclick="showSection('data')">Data Admin</button>
       <button onclick="showSection('gaji')">Gaji Admin</button>
     </nav>
+
     <div class="content">
       <section id="onoff">
         <h2>On / Off Duty</h2>
         <p>Klik untuk mengubah status:</p>
         <div id="onoff-list"></div>
       </section>
+
       <section id="data" class="hidden">
         <h2>Data Admin</h2>
         <table>
           <thead>
-            <tr><th>Nama</th><th>Status</th><th>Jam Kerja</th></tr>
+            <tr>
+              <th>Nama</th>
+              <th>Status</th>
+              <th>Jam Kerja</th>
+            </tr>
           </thead>
           <tbody id="data-body"></tbody>
         </table>
       </section>
+
       <section id="gaji" class="hidden">
         <h2>Gaji Admin</h2>
         <p>Gaji dihitung berdasarkan minimal 2 jam kerja per hari (Rp10.000 per jam, minimal 2 jam dihitung).</p>
@@ -44,6 +51,7 @@
       </section>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
